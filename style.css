@@ -17,10 +17,14 @@ header {
   box-shadow: 0px 0px 6px 2px rgb(199, 198, 198);
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  padding-right: 100px;
 }
 
+.header_container{
+  width: 950px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .logo {
   width: 180px;
   height: 50px;
@@ -99,7 +103,7 @@ nav {
 }
 
 .headline {
-  width: 700px;
+  width: 900px;
   padding-top: 40px;
 }
 
@@ -107,13 +111,13 @@ nav {
   background-image: url(./img/pumpkin.jpg);
   background-position: center;
   background-size: cover;
-  width: 700px;
+  width: 900px;
   height: 150px;
   border-radius: 10px;
 }
 
 .info_button {
-  width: 700px;
+  width: 900px;
   height: 84px;
   display: flex;
   padding-top: 32px;
@@ -121,7 +125,7 @@ nav {
 }
 
 .recipe_text {
-  width: 700px;
+  width: 900px;
   padding: 36px 0;
 }
 
@@ -148,7 +152,7 @@ nav {
 }
 
 .calculator {
-  width: 700px;
+  width: 900px;
   height: 64px;
   border-top: 1px solid rgb(223, 222, 222);
   display: flex;
@@ -188,7 +192,7 @@ nav {
 }
 
 .recipe_items {
-  width: 700px;
+  width: 900px;
   display: flex;
   justify-content: flex-start;
   text-align: left;
@@ -196,7 +200,7 @@ nav {
 }
 
 table {
-  width: 700px;
+  width: 900px;
 }
 
 tr {
@@ -242,8 +246,6 @@ footer {
   height: 100px;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  gap: 18px;
 }
 
 .footer_logo {
@@ -262,6 +264,13 @@ footer {
 .footer_container {
   display: flex;
   gap: 20px;
+}
+
+.footer_content{
+  width: 950px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer_link {
