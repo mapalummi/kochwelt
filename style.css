@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  font-family: raleway;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.header_content {
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  box-shadow: 0px 0px 6px 2px rgb(199, 198, 198);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 100px;
+}
+
+.logo {
+  width: 180px;
+  height: 50px;
+}
+
+nav {
+  padding-top: 42px;
+  padding-left: 4px;
+}
+
+.nav_link {
+  color: rgb(90, 89, 89);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px;
+}
+.nav_link:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.nav_link_hidden {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+
+.nav_link_special {
+  color: rgb(90, 89, 89);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 3px 12px;
+  background-color: white;
+  border-radius: 5px;
+
+  transition: background-color 3s ease-out;
+}
+
+.nav_link_special:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+
+  transition: color 2s ease-in-out;
+}
+
+.hidden_menu_icon {
+  display: none;
+}
+
+.close_icon {
+  width: 24px;
+  height: 24px;
+}
+
+.resp_menu_box {
+  background-color: rgb(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  transition: all 250ms ease-in-out;
+}
+
+.resp_menu_closed {
+  transform: translateX(100%);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline {
+  width: 700px;
+  padding-top: 40px;
+}
+
+.aot_image {
+  background-image: url(./img/pumpkin.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 700px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.info_button {
+  width: 700px;
+  height: 84px;
+  display: flex;
+  padding-top: 32px;
+  gap: 30px;
+}
+
+.recipe_text {
+  width: 700px;
+  padding: 36px 0;
+}
+
+.time_button_section {
+  display: flex;
+  gap: 16px;
+}
+
+.time_button {
+  background-color: rgb(223, 222, 222);
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-right: 4px;
+}
+
+.icon_clock {
+  width: 12px;
+  height: 12px;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.calculator {
+  width: 700px;
+  height: 64px;
+  border-top: 1px solid rgb(223, 222, 222);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.calc_input {
+  width: 100px;
+  height: 26px;
+  border: 0.5px solid gray;
+  text-align: center;
+}
+.calc_input:hover {
+  cursor: pointer;
+}
+
+.calc_button {
+  width: 100px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  background-color: green;
+  border: 1px solid gray;
+}
+
+.calc_button:hover {
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 0 8px 0 green;
+  background-color: green;
+  transition: all 0.4s ease-in-out;
+}
+
+.calc_label {
+  padding-right: 8px;
+}
+
+.recipe_items {
+  width: 700px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  flex-direction: column;
+}
+
+table {
+  width: 700px;
+}
+
+tr {
+  height: 36px;
+}
+
+.td_left {
+  background-color: rgb(223, 222, 222);
+  border-radius: 5px;
+  padding-left: 28px;
+}
+
+.td_right {
+  border-radius: 10px;
+  padding-left: 50px;
+}
+
+h4 {
+  margin-block-end: 0;
+}
+
+.p_text {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.profile {
+  height: 130px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+.profile_img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: rgb(90, 90, 90);
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer_logo {
+  width: 350px;
+  height: auto;
+}
+
+.img_seperator {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid white;
+  padding-right: 38px;
+}
+
+.footer_container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer_link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer_link:hover {
+  color: black;
+}
+
+@font-face {
+  font-family: raleway;
+  src: url(./Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+@media (max-width: 620px) {
+  nav {
+    display: none;
+  }
+  .hidden_menu_icon {
+    display: unset;
+  }
+}

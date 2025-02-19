@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="header_content">
+      <header>
+        <div>
+          <a href="/index.html"
+            ><img class="logo" src="./img/logo.png" alt="Logo Kochmütze"
+          /></a>
+        </div>
+
+        <a class="hidden_menu_icon" onclick="toggleRespMenu()" href="#"
+          ><img src="./img/icons8-menu-32.png" alt=""
+        /></a>
+
+        <nav>
+          <a class="nav_link" href="#">Start</a>
+          <a class="nav_link_special" href="#">Rezept des Tages</a>
+          <a class="nav_link" href="#">Kontakt</a>
+          <a class="nav_link" href="#">Impressum</a>
+        </nav>
+      </header>
+
+      <div id="resp_menu" class="resp_menu_box resp_menu_closed">
+        <!-- <button onclick="toggleRespMenu()">close</button> -->
+        <a class="nav_link_hidden" href=""
+          ><img class="close_icon" src="./img/icons8-löschen-64.png" alt=""
+        /></a>
+        <a class="nav_link_hidden" href="#">Start</a>
+        <a class="nav_link_hidden" href="#">Rezept des Tages</a>
+        <a class="nav_link_hidden" href="#">Kontakt</a>
+        <a class="nav_link_hidden" href="#">Impressum</a>
+      </div>
+
+      <div class="content">
+        <div class="headline">
+          <h1>Kürbis-Karotten-Risotto</h1>
+        </div>
+
+        <div class="aot_image"></div>
+
+        <div class="info_button">
+          <div class="time_button">
+            <img class="icon_clock" src="./img/clock-regular.svg" alt="" />45
+            Min.
+          </div>
+          <div class="time_button">
+            <img class="icon_clock" src="./img/brain-solid.svg" alt="" />simpel
+          </div>
+          <div class="time_button">
+            <img
+              class="icon_clock"
+              src="./img/calendar-alt-regular.svg"
+              alt=""
+            />18.02.2025
+          </div>
+        </div>
+
+        <div class="calculator">
+          <label class="calc_label" for="amount">Zutaten für</label>
+          <input class="calc_input" min="1" max="6" type="number" />
+          <button class="calc_button">Portionen</button>
+        </div>
+
+        <table>
+          <tr>
+            <td class="td_left">3 EL Pinienkerne</td>
+          </tr>
+          <tr>
+            <td class="td_right">1 Bund Petersilie</td>
+          </tr>
+          <tr>
+            <td class="td_left">50g Semmelbrösel</td>
+          </tr>
+          <tr>
+            <td class="td_right">80g geriebener Parmesan</td>
+          </tr>
+          <tr>
+            <td class="td_left">3 EL Olivenöl</td>
+          </tr>
+          <tr>
+            <td class="td_right">1 mittelgroßer Hokkaido Kürbis</td>
+          </tr>
+          <tr>
+            <td class="td_left">1 EL Butter</td>
+          </tr>
+          <tr>
+            <td class="td_right">250g Risottoreis</td>
+          </tr>
+          <tr>
+            <td class="td_left">500 ml Karottensaft</td>
+          </tr>
+          <tr>
+            <td class="td_right">250 ml Gemüsebrühe</td>
+          </tr>
+          <tr>
+            <td class="td_left">3 EL Limettensaft</td>
+          </tr>
+          <tr>
+            <td class="td_right">Salz</td>
+          </tr>
+          <tr>
+            <td class="td_left">Pfeffer</td>
+          </tr>
+        </table>
+
+        <div class="recipe_text">
+          <h2>Zubereitung</h2>
+
+          <div class="time_button_section">
+            <div class="time_button">
+              <img class="icon_clock" src="./img/clock-regular.svg" alt="" />
+              <p>ca. 15 Minuten</p>
+            </div>
+            <div class="time_button">
+              <img class="icon_clock" src="./img/clock-regular.svg" alt="" />
+              <p>Gesamtzeit ca. 45 Minuten</p>
+            </div>
+          </div>
+
+          <p class="p_text">
+            Pinienkerne in einer Pfanne ohne Fett anrösten. Danach grob hacken.
+            Nun die Petersilie fein hacken und 1 TL davon zum Garnieren
+            bereitstellen. Käsekrümel zubereiten: Semmelbrösel, Pinienkerne,
+            Petersilie, Parmesan und Olivenöl vermischen. Zwischenzeitlich den
+            Backofen auf 200 Grad vorheizen. <br /><br />
+            Jetzt den Kürbis halbieren, Kerne entfernen und mit Schale in 1,5
+            Zentimeter dicke Scheiben schneiden. Butter in einem Topf erhitzen
+            und den Risottoreis darin leicht glasig anschwitzen, mit
+            Karottensaft und Brühe aufgießen. <br /><br />
+            Nun Limettensaft hinzu geben, mit Salz und Pfeffer abschmecken und
+            aufkochen lassen bis die Flüssigkeit reduziert ist. Den Reis
+            gleichmäßig in einer Auflaufform verteilen, den Kürbis darüber
+            schichten und die Käsekrümmel darauf verteilen. <br /><br />
+            Das ganze nun 30 Minuten im vorgeheizten Ofen garen. <br />Vor dem
+            Servieren die restliche Petersilie über den Auflauf streuen.
+          </p>
+
+          <h4>Rezept erstellt von</h4>
+
+          <div class="profile">
+            <img class="profile_img" src="./img/profile_me.jpg" alt="" />
+            <span>Marco</span>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="img_seperator">
+          <img class="footer_logo" src="./img/logo.png" alt="" />
+        </div>
+        <div class="footer_container">
+        <a class="footer_link" href="#">Impressum</a>
+        <a class="footer_link" href="#">Datenschutz</a>
+        <a class="footer_link" href="#">AGB</a>
+      </div>
+      </footer>
+    </div>
+  </body>
+</html>
