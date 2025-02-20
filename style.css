@@ -69,8 +69,6 @@ nav {
 } */
 
 
-
-
 .hidden_menu_icon {
   display: none;
 }
@@ -90,7 +88,7 @@ nav {
   position: absolute;
   top: 70px;
   right: 0;
-  transition: all 250ms ease-in-out;
+  transition: all 125ms ease-in-out;
 }
 
 .resp_menu_closed {
@@ -317,7 +315,7 @@ footer {
   src: url(./Raleway/Raleway-VariableFont_wght.ttf);
 }
 
-/* MediaQuery für Navbar und Toggle passt */
+/* MediaQuery für Navbar/Toggle */
 @media (max-width: 620px) {
   nav {
     display: none;
