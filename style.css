@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: raleway;
+  font-family: "raleway", serif;
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -24,6 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 32px;
 }
 
 .logo {
@@ -48,17 +49,7 @@ nav {
   cursor: pointer;
 }
 
-.nav_link_hidden {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  padding-left: 8px;
-}
-.nav_link_hidden:hover{
-  color: green;
-}
+
 
 .nav_link_special {
   color: rgb(90, 89, 89);
@@ -71,7 +62,7 @@ nav {
 }
 
 .nav_link_special:hover {
-  background-color: green;
+  background-color: #008000;
   color: white;
   cursor: pointer;
   transition: color 2s ease-in-out;
@@ -87,10 +78,12 @@ nav {
 } */
 
 .resp_menu_box {
-  background-color: rgb(0, 0, 0, 0.3);
+  background-color: rgb(0, 0, 0, 0.4);
   display: flex;
+  justify-content: center;
   flex-direction: column;
   width: 160px;
+  height: 200px;
   position: absolute;
   top: 70px;
   right: 0;
@@ -100,6 +93,19 @@ nav {
 .resp_menu_closed {
   transform: translateX(100%);
 }
+
+.nav_link_hidden {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: start;
+  margin-top: 9px;
+  margin-bottom: 20px;
+  padding-left: 8px;
+}
+/* .nav_link_hidden:hover{
+  color: green;
+} */
 
 /* Diese Klasse kann später komplett raus: */
 .content_section{
@@ -150,7 +156,7 @@ nav {
 }
 
 .time_button {
-  background-color: rgb(223, 222, 222);
+  background-color: #efefef;
   height: 32px;
   border-radius: 4px;
   display: flex;
@@ -178,8 +184,12 @@ nav {
 .calc_input {
   width: 100px;
   height: 26px;
-  border: 0.5px solid gray;
   text-align: center;
+  border-width: 1px;
+  border-color: #efefef;
+  padding-inline: 0;
+  padding-block: 0;
+
 }
 
 .calc_input:hover {
@@ -191,20 +201,20 @@ nav {
   height: 30px;
   color: white;
   text-align: center;
-  background-color: green;
+  background-color: #008000;
   border: 1px solid gray;
 }
 
 .calc_button:hover {
   cursor: pointer;
   color: white;
-  box-shadow: 0 0 8px 0 green;
-  background-color: green;
+  box-shadow: 0 0 8px 0 #008000;
+  background-color: #008000;
   transition: all 0.4s ease-in-out;
 }
 
 .calc_label {
-  padding-right: 8px;
+  padding-right: 46px;
 }
 
 .recipe_items {
@@ -220,18 +230,18 @@ table {
 }
 
 tr {
-  height: 36px;
+  height: 48px;
 }
 
 .td_left {
-  background-color: rgb(223, 222, 222);
+  background-color: #efefef;
   border-radius: 5px;
-  padding-left: 28px;
+  padding-left: 8px;
 }
 
 .td_right {
   border-radius: 10px;
-  padding-left: 50px;
+  padding-left: 16px;
 }
 
 h4 {
@@ -258,15 +268,16 @@ h4 {
 }
 
 footer {
-  background-color: rgb(90, 90, 90);
+  background-color: #403b3b;
   height: 100px;
   display: flex;
   justify-content: space-evenly;
 }
 
 .footer_logo {
-  width: 350px;
+  width: 250px;
   height: auto;
+  filter: invert(100%);
 }
 
 .img_seperator {
@@ -279,7 +290,7 @@ footer {
 
 .footer_container {
   display: flex;
-  gap: 20px;
+  gap: 88px;
 }
 
 .footer_content{
@@ -299,7 +310,7 @@ footer {
 }
 
 @font-face {
-  font-family: raleway;
+  font-family: "raleway";
   src: url(./Raleway/Raleway-VariableFont_wght.ttf);
 }
 
