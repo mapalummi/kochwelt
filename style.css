@@ -183,13 +183,12 @@ nav {
 
 .calc_input {
   width: 100px;
-  height: 26px;
+  height: 24px;
   text-align: center;
   border-width: 1px;
   border-color: #efefef;
   padding-inline: 0;
   padding-block: 0;
-
 }
 
 .calc_input:hover {
@@ -198,7 +197,7 @@ nav {
 
 .calc_button {
   width: 100px;
-  height: 30px;
+  height: 26px;
   color: white;
   text-align: center;
   background-color: #008000;
